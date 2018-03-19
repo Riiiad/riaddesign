@@ -1,0 +1,38 @@
+.slider
+    align-items: center
+    color: white
+    display: grid
+    grid-template-columns: 100px 600px 100px
+    margin: auto
+    max-width: 800px
+    justify-items: center
+    .big-img
+        position: relative
+        img
+            width: 100%
+        .body
+            background-color: #ffd70080
+            bottom: 0
+            left: 0
+            position: absolute
+            text-align: center
+            width: 100%
+    .prev, .next
+        align-self: center
+        background-color: rgba(0, 0, 0, 0.5)
+        height: 100%
+        line-height: 300px
+        width: 100px
+.disabled
+    cursor: not-allowed
+
+.slide-in
+    opacity: 0
+    transform: translateX(-200px)
+    animation: slide-in 300ms ease-in forwards
+
+@keyframes slide-in
+    100%
+        transform: translateX(0px)
+        opacity: 1
+

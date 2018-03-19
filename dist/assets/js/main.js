@@ -1,0 +1,1 @@
+function myFunction(){console.log("*********************************"),console.log("main.js is working ... awesomeeeee"),console.log("*********************************")}window.onload=myFunction();
